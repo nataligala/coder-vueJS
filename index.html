@@ -13,6 +13,8 @@
 <body>
     <div id="app">
         <p v-text="text"></p>
+
+        <ul v-html="items"></ul>
     </div>
 
     <script>
@@ -20,7 +22,8 @@
         const app = new Vue({
             el: '#app',
             data: {
-                text: 'Clase 1',    
+                text: 'Clase 1',   
+                items: '<li>Mis Servicios</li>' 
 
             }
         })
